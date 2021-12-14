@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CollectionViewPerfXamarin.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout Spacing="0">
+        <Frame
+            Padding="24"
+            BackgroundColor="#2196F3"
+            CornerRadius="0">
+            <Label
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                Text="Welcome to Xamarin.Forms!"
+                TextColor="White" />
+        </Frame>
+        <ScrollView HorizontalScrollBarVisibility="Always" VerticalScrollBarVisibility="Never">
+            <CollectionView BackgroundColor="LightBlue" ItemsSource="{Binding Items}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid
+                            Padding="10"
+                            ColumnDefinitions="*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*,*"
+                            ColumnSpacing="0"
+                            RowSpacing="0">
+                            <Label
+                                Grid.Column="0"
+                                BackgroundColor="Gray"
+                                Text="{Binding Key}" />
+                            <Label
+                                Grid.Column="1"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col1}" />
+                            <Label
+                                Grid.Column="2"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col2}" />
+                            <Label
+                                Grid.Column="3"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col3}" />
+                            <Label
+                                Grid.Column="4"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col4}" />
+                            <Label
+                                Grid.Column="5"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col5}" />
+                            <Label
+                                Grid.Column="6"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col6}" />
+                            <Label
+                                Grid.Column="7"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col7}" />
+                            <Label
+                                Grid.Column="8"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col8}" />
+                            <Label
+                                Grid.Column="9"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col9}" />
+                            <Label
+                                Grid.Column="10"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col10}" />
+                            <Label
+                                Grid.Column="11"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col11}" />
+                            <Label
+                                Grid.Column="12"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col12}" />
+                            <Label
+                                Grid.Column="13"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col13}" />
+                            <Label
+                                Grid.Column="14"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col14}" />
+                            <Label
+                                Grid.Column="15"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col15}" />
+                            <Label
+                                Grid.Column="16"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col16}" />
+                            <Label
+                                Grid.Column="17"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col17}" />
+                            <Label
+                                Grid.Column="18"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col18}" />
+                            <Label
+                                Grid.Column="19"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col19}" />
+                            <Label
+                                Grid.Column="20"
+                                BackgroundColor="Gray"
+                                Text="{Binding Col20}" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
